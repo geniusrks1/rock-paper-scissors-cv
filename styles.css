@@ -493,8 +493,8 @@ li::before {
     border-radius: 10px;
     text-transform:uppercase;
     position: absolute;
-    bottom: -62%;
-    right: -35%;
+    top: 149%;
+    right: -30%;
     font-weight:700;
     cursor: pointer;
 }
