@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #89C15E;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 50px;
+    padding: 50px;
+    text-transform: uppercase;
+}
+
+.trophy-container {
+    width: 500px;
+    height: 400px;
+    background-image: url('./images/star.png');
+    background-size: auto;
+    background-position: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+.trophy-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1, h3 {
+    text-align: center;
+    color: white;
+    letter-spacing: 7px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#replay-button {
+    color: #6B6B6B;
+    line-height: 20px;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#rules {
+    background-color: #89C15E;
+    color: #FFFFFF;
+    border: 2px solid white;
+    transform:translate(750px,-90px)
+}
+
+.rules {
+    position: fixed;
+    top: 60%;
+    left:80%;
+    transform: translate(-50%, -50%);
+    background-color: #004429;
+    color: white;
+    padding: 18px;
+    border: 10px solid white;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.rules.hidden {
+    display: none;
+}
+
+.rules h2 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.rules ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rules li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.rules li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD600;
+}
+
+#close-rules {
+    background-color: #FF0000;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 40px;
+    margin-top: 15px;
+    transform: translate(190px,-360px);
+  
+  
+   
+}

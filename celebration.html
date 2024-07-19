@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Page</title>
+    <link rel="stylesheet" href="./celebration.css">
+</head>
+<body>
+    <main>
+        <div class="trophy-container">
+            <img src="./images/trophy.png" alt="Trophy">
+        </div>
+        <h1>Hurray !!!</h1>
+        <h3>You won the game</h3>
+        <button id="replay-button">play again</button>
+        <button id="rules" onclick="toggleRulesVisibility()">rules</button>
+    </main>
+
+    <div class="rules hidden" id="rules-popup">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+        </ul>
+        <button id="close-rules" onclick="toggleRulesVisibility()">X</button>
+    </div>
+
+    <script>
+        document.getElementById('replay-button').addEventListener('click', () => {
+            window.location.href = 'index.html'; 
+        });
+
+        function toggleRulesVisibility() {
+            var rulesPopup = document.getElementById('rules-popup');
+            rulesPopup.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

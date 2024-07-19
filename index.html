@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main> 
+    <div class="header">
+        <div class="title"> <span>Rock</span><span>Paper</span><span>Scissors </span></div>
+        <div class="score">
+            <div><span>Computer</span> <span> Score </span> <span  id="computer-score"> 0 </span> </div>
+            <div> <span>Your </span> <span> Score</span> <span id="human-score">0</span></div>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="triangle">
+            <div class="rr"> <div class="r"> <img class="choice" id="rock" src="./images/rock.png" alt="rock"/> </div></div>
+            <div class="pp">  <div class="p"> <img class="choice" id="paper" src="./images/paper.png" alt="paper"/></div></div>
+            <div class="ss">           <div class="s"> <img class="choice" id="scissors" src="./images/scissors.png" alt="scissors"/></div></div>
+            <div >           <div class="lh"> <img class="line" id="line-horizontal" src="./images/Line 1.png" alt="horizontal line"/></div></div>
+            <div>           <div class="lf"> <img class="line" id="line-left" src="./images/Line 2.png" alt="left diagonal line"/></div></div>
+            <div>           <div class="lr"><img class="line" id="line-right" src="./images/Line 3.png" alt="right diagonal line"/></div></div>
+        </div>
+
+
+        <div class="winnerpresentation">
+            <div class="windiv">
+                <div id="you-picked-win">You picked</div>
+             <div class="ldiv1">
+                 <div class="ldiv2">
+                     <div class="ldiv3">
+                         <div class="ldiv4">
+                             <div class="ldiv5">
+                                 <div class="ldiv6">
+                                     <div class="ldiv7">
+                                         <img id="your-choice" src="./images/icons8-fist-67 1.png" alt=""/>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         
+         <div class="inner-message">
+         <span>
+            You Win
+         </span>
+         <span>
+            against pc
+         </span> 
+        
+    
+         <button id="replay-button-win"> play again</button>
+         </div>
+         <div id="pc-picked-win">pc picked</div>
+                         <div class="rdiv1">
+                             <div class="rdiv2">
+                                 <div class="rdiv3">
+                                     <img id="pc-choice" src="./images/icons8-fist-67 1.png" alt=""/>
+                                 </div>
+                             </div>
+                         </div>
+    
+                        <a href="celebration.html"><button id="next"> next</button></a> 
+            </div> 
+    
+            </div>
+
+
+
+            <div class="you-loose">
+                <div class="loose-div">
+                    <div id="you-picked-lose">You picked</div>
+
+                 <div class="ldiv1">
+                     <div class="ldiv2">
+                         <div class="ldiv3">
+                             <div class="ldiv4">
+                                 <div class="ldiv5">
+                                     <div class="ldiv6">
+                                         <div class="ldiv7">
+                                             <img id="your-choice" src="./images/icons8-fist-67 1.png" alt=""/>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             
+             <div class="inner-message">
+             <span>
+                You lost
+             </span>
+             <span>
+                against pc
+             </span> 
+            
+        
+             <button id="replay-button-lose"> play again</button>
+             </div>
+             <div id="pc-picked-lose">PC PICKED</div>
+                             <div class="rdiv1">
+                                 <div class="rdiv2">
+                                     <div class="rdiv3">
+                                         <img id="pc-choice" src="./images/icons8-fist-67 1.png" alt=""/>
+                                     </div>
+                                 </div>
+                             </div>
+                </div> 
+        
+                </div>
+
+
+                <div class="draw">
+                    <div class="drawdiv">
+                        <div id="you-picked-draw">You picked</div>
+                     <div class="ldiv1">
+                         <div class="ldiv2">
+                             <div class="ldiv3">
+                                 <div class="ldiv4">
+                                     <div class="ldiv5">
+                                         <div class="ldiv6">
+                                             <div class="ldiv7">
+                                                 <img id="your-choice" src="./images/paper.png" alt=""/>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 
+                 <div class="inner-message">
+                 <span>
+                  Tie Up
+                 </span>
+               
+                
+            
+                 <button id="replay-button-draw"> replay</button>
+                 </div>
+                 <div id="pc-picked-draw">pc picked</div>
+                                 <div class="rdiv1">
+                                     <div class="rdiv2">
+                                         <div class="rdiv3">
+                                             <img id="pc-choice" src="./images/paper.png" alt=""/>
+                                         </div>
+                                     </div>
+                                 </div>
+            
+                               
+                    </div> 
+            
+                    </div>
+
+
+        <div id="result-message"></div>
+    </div>
+
+    <button id="rules-button" onclick="toggleRulesVisibility()">Rules</button>
+    <div class="rules" class="ihidden">
+        <div id="rules-popup" >
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <button onclick="toggleRulesVisibility()" id="close-rules">X</button>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
