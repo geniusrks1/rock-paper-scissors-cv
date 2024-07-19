@@ -84,7 +84,7 @@ main {
     color: #656565;
     padding: 0.1rem;
     box-sizing: border-box;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -96,7 +96,7 @@ main {
 #computer-score, #human-score {
     color: #252525;
     line-height: 3rem;
-    font-size: 2.7rem;
+    font-size: 2.2rem;
 }
 
 .game {
