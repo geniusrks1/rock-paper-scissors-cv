@@ -494,8 +494,8 @@ li::before {
     border-radius: 10px;
     text-transform:uppercase;
     position: absolute;
-    top: 140%;
-    right: -30%;
+    top: 300px;
+    right: 30px;
     font-weight:700;
     cursor: pointer;
     z-index: 999; 
