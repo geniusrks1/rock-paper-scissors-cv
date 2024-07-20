@@ -8,14 +8,14 @@ body {
 }
 
 main {
-    margin: 50px;
-    padding: 50px;
+    margin: 30px;
+    padding: 30px;
     text-transform: uppercase;
 }
 
 .trophy-container {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-image: url('./images/star.png');
     background-size: auto;
     background-position: center;
@@ -33,16 +33,16 @@ main {
 h1, h3 {
     text-align: center;
     color: white;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
 }
 
@@ -52,7 +52,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #replay-button {
@@ -67,7 +67,7 @@ button {
     background-color: #89C15E;
     color: #FFFFFF;
     border: 2px solid white;
-    transform:translate(750px,-90px)
+    transform:translate(300px,-90px)
 }
 
 .rules {
