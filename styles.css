@@ -483,7 +483,8 @@ li::before {
 }
 
 #next{
-
+        display: inline-block; 
+        visibility: visible;  
     background-color: #8CC461;
     color: white;
     width: 90px;
@@ -493,10 +494,11 @@ li::before {
     border-radius: 10px;
     text-transform:uppercase;
     position: absolute;
-    top: 149%;
+    top: 140%;
     right: -30%;
     font-weight:700;
     cursor: pointer;
+    z-index: 999; 
 }
 #replay-button{
     height: 40px;
